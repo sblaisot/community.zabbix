@@ -20,15 +20,15 @@ jobs:
       fail-fast: false
       matrix:
         container:
-          - rockylinux9
-          - rockylinux8
-          # - ubuntu2404
+          # - rockylinux9
+          # - rockylinux8
+          - ubuntu2404
           - ubuntu2204
-          - ubuntu2004
-          - ubuntu1804
-          - debian12
-          - debian11
-          - debian10
+          # - ubuntu2004
+          # - ubuntu1804
+          # - debian12
+          # - debian11
+          # - debian10
         version:
           - v64
           - v62
@@ -39,10 +39,10 @@ jobs:
           - agent2
           - agent2autopsk
         exclude:
-          - container: debian12
-            version: v62
-          # - container: ubuntu2404
+          # - container: debian12
           #   version: v62
+          - container: ubuntu2404
+            version: v62
 
     steps:
       - name: Check out code
