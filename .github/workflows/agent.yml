@@ -78,7 +78,7 @@ jobs:
         run: ansible-galaxy collection install -vvvv $COLLECTION_FILE
 
       - name: Install community.docker
-        run: ansible-galaxy collection install -vvvv community.docker
+        run: ansible-galaxy collection install -vvvv --force community.docker
 
       - name: Run role tests
         working-directory: molecule/zabbix_agent_tests
