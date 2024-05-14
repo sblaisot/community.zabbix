@@ -80,6 +80,9 @@ jobs:
       - name: Install community.docker
         run: ansible-galaxy collection install -vvvv --force community.docker
 
+      - name: Install ansible.posix
+        run: ansible-galaxy collection install -vvvv --force ansible.posix
+
       - name: Run role tests
         working-directory: molecule/zabbix_agent_tests
         run: >-
