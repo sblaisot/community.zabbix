@@ -1,5 +1,5 @@
 # Install CI dependencies for the Zabbix Roles
-ansible==8.0.0
+#ansible==8.0.0
 ansible-compat==3.0.0
 ansible-core==2.15.11
 docker==6.1.3
